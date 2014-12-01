@@ -123,6 +123,7 @@ function CheckChoice(whichbox) {
 		return(formatCurrency(hiddentotal.value));
 	}
 }
+
 function formatCurrency(num) {
 	num = num.toString().replace(/$|,/g,'');
 	if(isNaN(num)) num = "0";
@@ -153,6 +154,8 @@ function initForm() {
 	document.myform.radMan.checked='checked';
 	document.myform.radNor.checked='checked';
 }
+
+/* show sign and dish per result kcal*/
 
 function printResult() {
 	var dishArea = document.getElementById("dishArea");
@@ -189,6 +192,7 @@ function printResult() {
 	resultNav.style.display = "";
 }
 
+/*set health color sign */
 function setResultSign(totalValue) {
 	var resultImage = document.getElementById("resultImage");
 	
